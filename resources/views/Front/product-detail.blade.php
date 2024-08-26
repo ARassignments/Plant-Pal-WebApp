@@ -157,7 +157,8 @@ $img = $product->image->first()
             url: '{{route("Add-to-Cart")}}',
             type: 'post',
             data: {
-                id: id
+                id: id,
+                status : 'plants'
             },
             dataType: 'json',
             success: function(response) {

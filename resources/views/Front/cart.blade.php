@@ -41,7 +41,7 @@
                                     <img src="{{asset('uploads/product/small/'.$cartItem->options->productImage->image)}}"
                                         width="60px">
                                     @else
-                                    <img src="{{asset('asset/img/default.avif')}}" width="60px">
+                                    <img src="{{asset('asset/front/img/service-4.jpg')}}" width="60px">
                                     @endif
                                     <h2 class="nav-nigth">{{$cartItem->name}}</h2>
                                 </div>
@@ -148,6 +148,7 @@ function UpdateCart(rowid, qty) {
         data: {
             rowid: rowid,
             qty: qty,
+            
         },
         dataType: 'json',
         success: function(response) {

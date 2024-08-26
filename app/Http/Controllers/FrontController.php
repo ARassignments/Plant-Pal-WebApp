@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\product;
 use App\Models\Rating;
-use App\Models\accessorie;
+use App\Models\Accessorie;
 use App\Models\User;
 use App\Models\Category;
 use App\Models\contact;
@@ -216,7 +216,7 @@ class FrontController extends Controller
 
         $relatedProducts = [];  
 
-        return view('Front.product-detail',compact("accessories"));
+        return view('Front.accessorie-detail',compact("accessories"));
     }
 
 

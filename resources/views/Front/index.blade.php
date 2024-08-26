@@ -241,7 +241,7 @@
                         <p class="mb-4">
                            {!! $acce->description !!}
                         </p>
-                        <a href="{{route('Front.accessorie-detail',$acce->slug)}}" class="add-to-cart-btn">View More</a>
+                        <a href="{{route('accessorie-detail',$acce->slug)}}" class="add-to-cart-btn">View More</a>
                     </div>
                 </div>
             </div>

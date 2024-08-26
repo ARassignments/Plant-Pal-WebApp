@@ -143,7 +143,7 @@ Route::get('/Shop/{category?}', [FrontController::class, 'shop'])->name('Front.s
 Route::get('/Cart', [FrontController::class, 'cart'])->name('Front.cart');
 Route::get('/Checkout', [FrontController::class, 'checkout'])->name('Front.checkout');
 Route::get('/Product-Detail/{slug}', [FrontController::class, 'productDetail'])->name('Front.product-detail');
-Route::get('/Accessorie-Detail/{slug}', [FrontController::class, 'accessorieDetail'])->name('Front.accessorie-detail');
+Route::get('/Accessorie-Detail/{slug}', [FrontController::class, 'accessorieDetail'])->name('accessorie-detail');
 Route::post('/Send-Contact-Email', [FrontController::class, 'SendContactEmal'])->name('Send-Contact-Email');
 Route::post('/Store-Feedback', [FrontController::class, 'StoreFeedback'])->name('StoreFeedback');
 
