@@ -107,6 +107,10 @@
                 <a href="{{ route('Front.gallery') }}" class="nav-item nav-link">Gallery</a>
                 <a href="{{ route('Front.shop') }}" class="nav-item nav-link">Shop</a>
                 <a href="{{ route('Front.contact') }}" class="nav-item nav-link">Contact</a>
+                  @if(Auth::check())
+                @else 
+                <a href="{{ route('login') }}" class="nav-item nav-link">Login</a>
+                @endif
             </div>
         </div>
     </nav>

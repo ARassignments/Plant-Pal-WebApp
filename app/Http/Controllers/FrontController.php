@@ -204,6 +204,20 @@ class FrontController extends Controller
 
         return view('Front.product-detail',compact("product", "relatedProducts", "ratings"));
     }
+    public function accessorieDetail(Request $request , $slug){
+
+
+        $accessories = Accessorie::where('slug', $slug)->first();
+
+        if (empty($accessories)) {
+
+            return redirect()->back();
+        }
+
+        $relatedProducts = [];  
+
+        return view('Front.product-detail',compact("accessories"));
+    }
 
 
     public function SendContactEmal(Request $request)

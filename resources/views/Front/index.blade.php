@@ -225,7 +225,7 @@
     <div class="container">
         <div class="text-center mx-auto wow fadeInUp" data-wow-delay="0.1s" style="max-width: 500px">
             <p class="fs-5 fw-bold text-primary">Our Accessories</p>
-            <h1 class="display-5 mb-5">Accessories That We Offer For You</h1>
+            <h1 class="display-5 mb-5">Accessories</h1>
         </div>
         <div class="row g-4">
             @if(!empty($accessorie))
@@ -241,6 +241,7 @@
                         <p class="mb-4">
                            {!! $acce->description !!}
                         </p>
+                        <a href="{{route('Front.accessorie-detail',$acce->slug)}}" class="add-to-cart-btn">View More</a>
                     </div>
                 </div>
             </div>
@@ -308,8 +309,8 @@
             <div class="col-12">
                 <!-- Section Heading -->
                 <div class="section-heading text-center">
-                    <h2>NEW ARRIVALS</h2>
-                    <p>We have the latest products, it must be exciting for you</p>
+                    <h2>PLANTS</h2>
+                    <p>We have the latest plants, it must be exciting for you</p>
                 </div>
             </div>
         </div>
@@ -327,7 +328,7 @@
                 <div class="single-product-area mb-50 wow fadeInUp" data-wow-delay="100ms">
                     <!-- Product Image -->
                     <div class="product-img">
-                        <a href="shop-details.html"><img src="{{ asset('uploads/product/small/'.$img->image) }}" alt="" /></a>
+                        <a href="{{route('Front.product-detail',$product->slug)}}"><img src="{{ asset('uploads/product/small/'.$img->image) }}" alt="" /></a>
                         <!-- Product Tag -->
 
                         <div class="product-meta d-flex">
